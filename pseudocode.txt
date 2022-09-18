@@ -10,7 +10,7 @@ INPUT "namaBarang"
 INPUT "jumBarang"
 
 // FindIndex
-FOR int i = 0; i < namaBarang.length; i++) {
+FOR int i = 0; i <= listNamaBarang.length; i++) {
     if("listNamaBarang"["i"] == "namaBarang"){
     "temp" = "i";
     }
