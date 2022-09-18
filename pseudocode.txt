@@ -1,0 +1,37 @@
+READ AND WRITE "listNamaBarang" with ArrayString
+READ AND WRITE "hargaBarang" with ArrayInteger
+READ AND WRITE "namaBarang" with string
+READ AND WRITE "temp" with integer
+READ AND WRITE "jumBarang" with integer
+READ AND WRITE "totalHarga" with integer
+READ AND WRITE "totalBayar" with integer
+
+INPUT "namaBarang"
+INPUT "jumBarang"
+
+// FindIndex
+FOR int i = 0; i <= listNamaBarang.length; i++) {
+    if("listNamaBarang"["i"] == "namaBarang"){
+    "temp" = "i";
+    }
+}
+
+STORE "totalHarga" with calculateTotalHarga(hargaBarang[temp], jumBarang)
+
+IF "totalHarga" >= 150000
+   STORE "totalBayar" with calculateTotalBayar(totalHarga, 0.9)
+ELSE
+   STORE "totalBayar" with calculateTotalBayar(totalHarga, 1)
+
+PRINT "totalBayar"
+
+
+FUNCTION calculateTotalHarga (hargaBarang, jumBarang)
+    STORE "result" with "hargaBarang" times "jumBarang"
+    RETURN "result"
+END FUNCTION
+
+FUNCTION calculateTotalBayar (totalHarga, diskon)
+    STORE "bayar" with "totalHarga" times "diskon"
+    RETURN "bayar"
+END FUNCTION
