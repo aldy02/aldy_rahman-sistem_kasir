@@ -6,3 +6,12 @@ READ AND WRITE "jumBarang" with integer
 READ AND WRITE "totalHarga" with integer
 READ AND WRITE "totalBayar" with integer
 
+INPUT "namaBarang"
+INPUT "jumBarang"
+
+// FindIndex
+FOR int i = 0; i < namaBarang.length; i++) {
+    if("listNamaBarang"["i"] == "namaBarang"){
+    "temp" = "i";
+    }
+}
