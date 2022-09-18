@@ -1,0 +1,8 @@
+READ AND WRITE "listNamaBarang" with ArrayString
+READ AND WRITE "hargaBarang" with ArrayInteger
+READ AND WRITE "namaBarang" with string
+READ AND WRITE "temp" with integer
+READ AND WRITE "jumBarang" with integer
+READ AND WRITE "totalHarga" with integer
+READ AND WRITE "totalBayar" with integer
+
