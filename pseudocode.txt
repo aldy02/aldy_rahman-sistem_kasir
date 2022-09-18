@@ -16,6 +16,14 @@ FOR int i = 0; i < namaBarang.length; i++) {
     }
 }
 
+STORE "totalHarga" with calculateTotalHarga(hargaBarang[temp], jumBarang)
+
+IF "totalHarga" >= 150000
+   STORE "totalBayar" with calculateTotalBayar(totalHarga, 0.9)
+ELSE
+   STORE "totalBayar" with calculateTotalBayar(totalHarga, 1)
+
+PRINT "totalBayar"
 
 
 FUNCTION calculateTotalHarga (hargaBarang, jumBarang)
