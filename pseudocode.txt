@@ -15,3 +15,15 @@ FOR int i = 0; i < namaBarang.length; i++) {
     "temp" = "i";
     }
 }
+
+
+
+FUNCTION calculateTotalHarga (hargaBarang, jumBarang)
+    STORE "result" with "hargaBarang" times "jumBarang"
+    RETURN "result"
+END FUNCTION
+
+FUNCTION calculateTotalBayar (totalHarga, diskon)
+    STORE "bayar" with "totalHarga" times "diskon"
+    RETURN "bayar"
+END FUNCTION
